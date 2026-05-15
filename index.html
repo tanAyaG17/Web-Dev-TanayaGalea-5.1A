@@ -5,54 +5,174 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ArcHive Homepage</title>
     
+    
     <link rel="stylesheet" href="assets/styles/bootstrap.min.css">
     <link rel="stylesheet" href="assets/styles/bootstrapindex.css">
+    <link rel="stylesheet" href="assets/styles/style.css">
 </head>
 <body>
     <!--Navbar-->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-            <nav class="navbar bg-body-tertiary">
-  <div class="container">
-    <a class="ArcHive" href="index.html">
-      <img src="assets/images/ArcHiveLogo_-01.svg" alt="ArcHive" width="80" height="80">
-    </a>
-  </div>
-</nav>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <nav class="navbar navbar-expand-lg archnav">
+        <div class="container-fluid px-4">
+            
+            <!--logo-->
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/images/ArcHiveLogo_-01.svg" alt="ArcHive" class="logo">
+            </a>
+            
+            <!--Mobile menu button-->
+            <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
+            
+            <!--Navbar links-->
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                
+                <!-- Search Bar -->
+                <form class="d-flex search-form my-3 my-lg-0" role="search">
+                    <input class="form-control search-input" type="search" placeholder="Search" aria-label="Search"/>
+                    <button class="btn search-btn" type="submit">Search</button>
+                </form>
+                
+                <ul class="navbar-nav mb-2 mb-lg-0 align-items-lg-center gap-lg-3">
+                    
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link" href="top3.html">TOP 3 MOVIES</a>
                     </li>
+                    
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
+                        <a class="nav-link" href="watched.html">WATCHED</a>
                     </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Dropdown
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">CONTACT</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="find.html">FIND MY MOVIE</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a href="profile.html">
+                            <img src="assets/images/profile.jpg" alt="user profile" class="profile-img">
                         </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
                     </li>
                 </ul>
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
+                
             </div>
         </div>
     </nav>
     
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-content">
+            <h1>Not sure what to watch?</h1>
+            <p>Answer a few quick questions & discover the perfect movie for you!</p>
+            <a href="find.html" class="btn hero-btn">Find My Movie</a>
+        </div>
+    </section>
+    
+    <!-- Featured Movies -->
+    <section class="featured-section">
+        <div class="container-fluid px-5">
+            <h2 class="featured-title">Featured Movies</h2>
+            <div class="row gy-5">
+                
+                <!-- Movie 1 -->
+                <div class="col-lg-6">
+                    <div class="movie-card row align-items-center">
+                        <div class="col-md-5 text-center">
+                            <img src="assets/images/isle-of-dogs.jpeg" alt="Isle of Dogs Poster" class="movie-poster">
+                        </div>
+                        <div class="col-md-7">
+                            <h3>Isle of Dogs</h3>
+                            
+                            <p>
+                                Isle of Dogs is an animated film set in a futuristic version of Japan,
+                                where all dogs have been exiled to a remote island due to a public health crisis.
+                            </p>
+                            
+                            <a href="#" class="btn more-btn">More Info</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Movie 2 -->
+                <div class="col-lg-6">
+                    <div class="movie-card row align-items-center">
+                        <div class="col-md-5 text-center">
+                            <img src="assets/images/whiplash.jpeg" alt="Whiplash Poster" class="movie-poster">
+                        </div>
+                        <div class="col-md-7">
+                            <h3>Whiplash</h3>
+                            
+                            <p>
+                                Whiplash follows a young and ambitious jazz drummer striving
+                                to become one of the greats under an intense instructor.
+                            </p>
+                            
+                            <a href="#" class="btn more-btn">More Info</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="footer-section">
+        <div class="container-fluid px-5">
+            <div class="row gy-4 align-items-end">
+                
+                <!--Left Side-->
+                <div class="col-lg-8">
+                    <h3 class="footer-logo">ArcHive</h3>
+                    
+                    <p class="footer-tagline">
+                        Discover, Track & Explore films.
+                    </p>
+                    
+                    <h5 class="footer-heading">Quick Links</h5>
+                    
+                    <div class="footer-links">
+                        <a href="index.html">Home</a>
+                        <a href="top3.html">Top 3</a>
+                        <a href="watched.html">Watched</a>
+                        <a href="contact.html">Contact</a>
+                        <a href="find.html">Find My Movie</a>
+                        <a href="profile.html">Profile</a>
+                    </div>
+                    
+                    <p class="footer-email">
+                        info@archive.com
+                    </p>
+                </div>
+                
+                <!--Right Side-->
+                <div class="col-lg-4 text-lg-end footer-right">
+                    <div class="social-icons">
+                        <a href="#">
+                            <img src="assets/icons/instagram.png" alt="Instagram">
+                        </a>
+                        <a href="#">
+                            <img src="assets/icons/twittericon.png" alt="Twitter">
+                        </a>
+                        <a href="#">
+                            <img src="assets/icons/tiktokicon.png" alt="TikTok">
+                        </a>
+                        <a href="#">
+                            <img src="assets/icons/facebookicon.png" alt="Facebook">
+                        </a>
+                    </div>
+                    
+                    <p class="copyright">
+                        © 2026 ArcHive. All rights reserved.
+                    </p>
+                    
+                </div>
+            </div>
+        </div>
+    </footer>
     
     
     
@@ -63,13 +183,6 @@
     
     
     
-    
-    
-    
-    
-    
-    
-    <script src="assets/scripts/bootstrap.js"></script>
     <script src="assets/scripts/bootstrap.bundle.min.js"></script>
 </body>
 </html>
