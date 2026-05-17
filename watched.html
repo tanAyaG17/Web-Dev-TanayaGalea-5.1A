@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watched Movies</title>
+    
+    <link rel="stylesheet" href="assets/styles/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/styles/bootstrapindex.css">
+    <link rel="stylesheet" href="assets/styles/indexstyle.css">
+</head>
+<body>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg archnav">
+        <div class="container-fluid px-4">
+            
+            <!--logo-->
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/images/ArcHiveLogo_-01.svg" alt="ArcHive" class="logo">
+            </a>
+            
+            <!--Mobile menu button-->
+            <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <!--Navbar links-->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                
+                <!-- Search Bar -->
+                <form class="d-flex search-form my-3 my-lg-0" role="search">
+                    <input class="form-control search-input" type="search" placeholder="Search" aria-label="Search"/>
+                    <button class="btn search-btn" type="submit">Search</button>
+                </form>
+                
+                <ul class="navbar-nav mb-2 mb-lg-0 align-items-lg-center gap-lg-3">
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="archive.html">ARCHIVE</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="top3.html">TOP 3 MOVIES</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="watched.html">WATCHED</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">CONTACT</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="find.html">FIND MY MOVIE</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a href="profile.html">
+                            <img src="assets/images/profile.jpg" alt="user profile" class="profile-img">
+                        </a>
+                    </li>
+                </ul>
+                
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Movies Watched Hero -->
+    <section class="watched-hero">
+        <div class="watched-hero-content">
+            <h1>Movies Watched</h1>
+        </div>
+    </section>
+    
+    <!--Watched Movies Section-->
+    <section class="watched-section">
+        <div class="container-fluid px-5">
+            <div class="row justify-content-center g-5">
+                
+                <!-- Movie 1 -->
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="watched-card">
+                        <a href="goodwillhunting.html">
+                            <img src="assets/images/good-will-hunting.jpeg" 
+                            alt="Good Will Hunting Poster"
+                            class="watched-poster">
+                        </a>
+                        
+                        <div class="star-rating">
+                            <input type="radio" id="goodwill-5" name="goodwill-rating">
+                            <label for="goodwill-5">★</label>
+                            
+                            <input type="radio" id="goodwill-4" name="goodwill-rating">
+                            <label for="goodwill-4">★</label>
+                            
+                            <input type="radio" id="goodwill-3" name="goodwill-rating">
+                            <label for="goodwill-3">★</label>
+                            
+                            <input type="radio" id="goodwill-2" name="goodwill-rating">
+                            <label for="goodwill-2">★</label>
+                            
+                            <input type="radio" id="goodwill-1" name="goodwill-rating">
+                            <label for="goodwill-1">★</label>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Movie 2 -->
+                
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="watched-card">
+                        <a href="whiplash.html">
+                            <img src="assets/images/whiplash.jpeg" 
+                            alt="whiplash Poster"
+                            class="watched-poster">
+                        </a>
+                        
+                        <div class="star-rating">
+                            <input type="radio" id="whiplash-5" name="whiplash-rating">
+                            <label for="goodwill-5">★</label>
+                            
+                            <input type="radio" id="whiplash-4" name="whiplash-rating">
+                            <label for="whiplash-4">★</label>
+                            
+                            <input type="radio" id="whiplash-3" name="whiplash-rating">
+                            <label for="whiplash-3">★</label>
+                            
+                            <input type="radio" id="whiplash-2" name="whiplash-rating">
+                            <label for="whiplash-2">★</label>
+                            
+                            <input type="radio" id="whiplash-1" name="whiplash-rating">
+                            <label for="whiplash-1">★</label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Movie 3 -->
+                                        <div class="col-6 col-md-4 col-lg-2">
+                        <div class="watched-card">
+                            <a href="interstellar.html">
+                                <img src="assets/images/_Interstellar_.jpeg" 
+                                alt="Interstellar Poster"
+                                class="watched-poster">
+                                </a>
+
+                                <div class="star-rating">
+                                    <input type="radio" id="interstellar-5" name="interstellar-rating">
+                                    <label for="interstellar-5">★</label>
+
+                                    <input type="radio" id="interstellar-4" name="interstellar-rating">
+                                    <label for="interstellar-4">★</label>
+
+                                    <input type="radio" id="interstellar-3" name="interstellar-rating">
+                                    <label for="interstellar-3">★</label>
+
+                                    <input type="radio" id="interstellar-2" name="interstellar-rating">
+                                    <label for="interstellar-2">★</label>
+
+                                    <input type="radio" id="interstellar-1" name="interstellar-rating">
+                                    <label for="interstellar-1">★</label>
+                                </div>
+                        </div>
+                    </div>
+
+                    <!-- Movie 4 -->
+
+                    <div class="col-6 col-md-4 col-lg-2">
+                        <div class="watched-card">
+                            <a href="themask.html">
+                                <img src="assets/images/themask.jpeg" 
+                                alt="Interstellar Poster"
+                                class="watched-poster">
+                                </a>
+
+                                <div class="star-rating">
+                                    <input type="radio" id="mask-5" name="mask-rating">
+                                    <label for="mask-5">★</label>
+
+                                    <input type="radio" id="mask-4" name="mask-rating">
+                                    <label for="mask-4">★</label>
+
+                                    <input type="radio" id="mask-3" name="mask-rating">
+                                    <label for="mask-3">★</label>
+
+                                    <input type="radio" id="mask-2" name="mask-rating">
+                                    <label for="mask-2">★</label>
+
+                                    <input type="radio" id="mask-1" name="mask-rating">
+                                    <label for="mask-1">★</label>
+                                </div>
+                        </div>
+                    </div>
+
+                    <!-- Movie 5 -->
+
+                    <div class="col-6 col-md-4 col-lg-2">
+                        <div class="watched-card">
+                            <a href="isleofdogs.html">
+                                <img src="assets/images/isle-of-dogs.jpeg" 
+                                alt="Interstellar Poster"
+                                class="watched-poster">
+                                </a>
+
+                                <div class="star-rating">
+                                    <input type="radio" id="isle-5" name="isle-rating">
+                                    <label for="isle-5">★</label>
+
+                                    <input type="radio" id="isle-4" name="isle-rating">
+                                    <label for="isle-4">★</label>
+
+                                    <input type="radio" id="isle-3" name="isle-rating">
+                                    <label for="isle-3">★</label>
+
+                                    <input type="radio" id="isle-2" name="isle-rating">
+                                    <label for="isle-2">★</label>
+
+                                    <input type="radio" id="isle-1" name="isle-rating">
+                                    <label for="isle-1">★</label>
+                                </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    <!-- Footer -->
+    <footer class="footer-section">
+        <div class="container-fluid px-5">
+            <div class="row gy-4 align-items-end">
+                
+                <!--Left Side-->
+                <div class="col-lg-8">
+                    <h3 class="footer-logo">ArcHive</h3>
+                    
+                    <p class="footer-tagline">
+                        Discover, Track & Explore films.
+                    </p>
+                    
+                    <h5 class="footer-heading">Quick Links</h5>
+                    
+                    <div class="footer-links">
+                        <a href="index.html">Home</a>
+                        <a href="top3.html">Top 3</a>
+                        <a href="watched.html">Watched</a>
+                        <a href="contact.html">Contact</a>
+                        <a href="find.html">Find My Movie</a>
+                        <a href="profile.html">Profile</a>
+                    </div>
+                    
+                    <p class="footer-email">
+                        info@archive.com
+                    </p>
+                </div>
+                
+                <!--Right Side-->
+                <div class="col-lg-4 text-lg-end footer-right">
+                    <div class="social-icons">
+                        <a href="#">
+                            <img src="assets/icons/instagram.png" alt="Instagram">
+                        </a>
+                        <a href="#">
+                            <img src="assets/icons/twittericon.png" alt="Twitter">
+                        </a>
+                        <a href="#">
+                            <img src="assets/icons/tiktokicon.png" alt="TikTok">
+                        </a>
+                        <a href="#">
+                            <img src="assets/icons/facebookicon.png" alt="Facebook">
+                        </a>
+                    </div>
+                    
+                    <p class="copyright">
+                        © 2026 ArcHive. All rights reserved.
+                    </p>
+                    
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    
+    
+    <script src="assets/scripts/bootstrap.bundle.min.js"></script>
+</body>
+</html>

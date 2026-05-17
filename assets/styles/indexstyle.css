@@ -94,9 +94,9 @@ body {
     .search-form {
         max-width: 100%;
     }
-
+    
     .profile-img {
-    margin-top: 10px;
+        margin-top: 10px;
     }
 }
 
@@ -115,11 +115,11 @@ body {
         height: 300px;
         padding: 20px;
     }
-
+    
     .hero-content h1 {
         font-size: 2.4rem;
     }
-
+    
     .hero-content p {
         font-size: 1rem;
     }
@@ -129,8 +129,8 @@ body {
 .hero-section {
     height: 360px;
     background-image: linear-gradient(
-        rgba(35, 31, 32, 0.45),
-        rgba(35, 31, 32, 0.45)
+    rgba(35, 31, 32, 0.45),
+    rgba(35, 31, 32, 0.45)
     ), url("../images/Hero.jpeg");
     background-size: cover;
     background-position: center;
@@ -300,7 +300,7 @@ body {
     width: 46px;
     height: 46px;
     border-radius: 50%;
-
+    
     display: flex;
     align-items: center;
     justify-content: center;
@@ -383,23 +383,23 @@ body {
 .filter-select {
     background-color: #fdde00;
     color: #231f20;
-
+    
     border: none;
     border-radius: 30px;
-
+    
     padding: 10px 18px;
     padding-right: 55px;
-
+    
     font-weight: 800;
     font-style: italic;
     text-transform: uppercase;
-
+    
     cursor: pointer;
-
+    
     appearance: none;
     -webkit-appearance: none;
     -moz-appearance: none;
-
+    
     background-image: url(../icons/noun-arrow-down-2424963.png);
     background-repeat: no-repeat;
     background-position: right 22px center;
@@ -497,24 +497,515 @@ body {
         padding: 35px 25px;
         text-align: center;
     }
-
+    
     .film-title {
         font-size: 2.2rem;
     }
-
+    
     .film-description {
         margin: 0 auto;
     }
-
+    
     .trailer-box {
         height: 230px;
     }
-
+    
     .film-sidebar {
         padding: 35px 25px;
     }
-
+    
     .recommendation-grid {
         justify-items: center;
     }
+}
+
+.trailer-box iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* Top 3 */
+
+.top3-hero {
+    height: 170px;
+    background-image: linear-gradient(
+    rgba(35, 31, 32, 0.45),
+    rgba(35, 31, 32, 0.45)
+    ), url("../images/hero02.jpeg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.top3-hero h1 {
+    color: #ffffff;
+    font-size: 3.5rem;
+    font-weight: 900;
+    font-style: italic;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.top3-section {
+    background-color: #fdde00;
+    padding: 70px 0;
+}
+
+.top3-card {
+    text-align: center;
+    color: #63c2d0;
+}
+
+.rank-number {
+    display: inline-block;
+    background-color: #63c2d0;
+    color: #231f20;
+    font-size: 1.2rem;
+    font-weight: 900;
+    border-radius: 30px;
+    padding: 6px 18px;
+    margin-bottom: 20px;
+}
+
+.top3-poster {
+    width: 100%;
+    max-width: 240px;
+    height: 360px;
+    object-fit: cover;
+    box-shadow: 0 4px 12px rgba(35, 31, 32, 0.35);
+    transition: 0.3s;
+}
+
+.top3-poster:hover {
+    transform: translateY(-6px) scale(1.03);
+}
+
+.top3-card h2 {
+    color: #231f20;
+    font-size: 1.7rem;
+    font-weight: 900;
+    font-style: italic;
+    text-transform: uppercase;
+    margin-top: 18px;
+}
+
+.top3-card p {
+    color: #231f20;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+@media (max-width: 768px) {
+    .top3-hero h1 {
+        font-size: 2rem;
+    }
+    
+    .top3-poster {
+        height: 330px;
+    }
+}
+
+.contact-form {
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 60px 0;
+}
+
+.form-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.form-row label {
+    color: #231f20;
+    font-size: 1.5rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-right: 8px;
+    min-width: 260px;
+    text-align: right;
+}
+
+.form-row input {
+    width: 330px;
+    border: none;
+    border-radius: 30px;
+    padding: 8px 18px;
+}
+
+.contact-submit {
+    display: block;
+    margin: 25px auto 0;
+    background-color: #ffffff;
+    color: #231f20;
+    border: none;
+    border-radius: 30px;
+    padding: 8px 40px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+/* Watched Page */
+
+.watched-hero {
+    height: 170px;
+    
+    background-image: linear-gradient(
+    rgba(35,31,32,0.45),
+    rgba(35,31,32,0.45)
+    ), url("../images/hero04.jpeg");
+    
+    background-size: cover;
+    background-position: center;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.watched-hero h1 {
+    color: #ffffff;
+    
+    font-size: 3.5rem;
+    font-weight: 900;
+    font-style: italic;
+    
+    text-transform: uppercase;
+}
+
+.watched-section {
+    background-color: #63c2d0;
+    padding: 70px 0;
+}
+
+.watched-card {
+    text-align: center;
+}
+
+.watched-poster {
+    width: 100%;
+    max-width: 230px;
+    height: 340px;
+    
+    object-fit: cover;
+    
+    box-shadow: 0 4px 12px rgba(35,31,32,0.35);
+    
+    transition: 0.3s;
+}
+
+.watched-poster:hover {
+    transform: translateY(-6px) scale(1.03);
+}
+
+.star-rating {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    
+    margin-top: 15px;
+}
+
+.star-rating input {
+    display: none;
+}
+
+.star-rating label {
+    color: #ffffff;
+    
+    font-size: 1.7rem;
+    
+    cursor: pointer;
+    
+    transition: 0.2s;
+}
+
+.star-rating label:hover,
+.star-rating label:hover ~ label,
+.star-rating input:checked ~ label {
+    color: #fdde00;
+}
+
+@media (max-width: 768px) {
+    
+    .watched-hero h1 {
+        font-size: 2rem;
+    }
+    
+    .watched-poster {
+        height: 300px;
+    }
+    
+}
+
+/* Find My Movie Page */
+
+.find-hero {
+    height: 220px;
+    background-image: linear-gradient(
+    rgba(35, 31, 32, 0.45),
+    rgba(35, 31, 32, 0.45)
+    ), url("../images/hero05.jpeg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.find-hero h1 {
+    color: #ffffff;
+    font-size: 3.5rem;
+    font-weight: 900;
+    font-style: italic;
+    text-transform: uppercase;
+}
+
+.find-hero p {
+    color: #ffffff;
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+.quiz-section {
+    background-color: #63c2d0;
+    padding: 70px 0 70px;
+    text-align: center;
+}
+
+.quiz-question {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.quiz-question h2 {
+    color: #231f20;
+    font-size: 1.6rem;
+    font-weight: 900;
+    font-style: italic;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+
+.quiz-option {
+    background-color: #ffffff;
+    color: #231f20;
+    border: none;
+    border-radius: 30px;
+    padding: 7px 18px;
+    margin: 5px;
+    font-weight: 900;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.quiz-option:hover,
+.quiz-option.selected {
+    background-color: #63c2d0;
+}
+
+.find-movie-submit {
+    background-color: #ffffff;
+    color: #231f20;
+    border: none;
+    border-radius: 30px;
+    padding: 10px 35px;
+    font-size: 1.4rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-top: 15px;
+}
+
+.find-movie-submit:hover {
+    background-color: #63c2d0;
+}
+
+.movie-result {
+    margin-top: 35px;
+    color: #231f20;
+    font-weight: 900;
+}
+
+.movie-result h3 {
+    font-size: 1.3rem;
+    text-transform: uppercase;
+}
+
+.movie-result p {
+    font-size: 2rem;
+    font-style: italic;
+    text-transform: uppercase;
+}
+
+.result-btn {
+    display: inline-block;
+    background-color: #fdde00;
+    color: #231f20;
+    padding: 8px 24px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.quiz-question-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.find-movie-submit {
+    display: block;
+    margin: 35px auto 0;
+}
+
+/* Profile Page */
+
+.profile-header {
+    background-color: #fdde00;
+    padding: 45px 0;
+}
+
+.profile-large-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profile-header h1 {
+    color: #231f20;
+    font-size: 3rem;
+    font-weight: 900;
+    font-style: italic;
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+
+.profile-header h2 {
+    color: #231f20;
+    font-size: 2rem;
+    font-weight: 900;
+    font-style: italic;
+    text-transform: uppercase;
+}
+
+.profile-section {
+    background-color: #63c2d0;
+    padding: 35px 0 70px;
+}
+
+.profile-section-title {
+    color: #231f20;
+    font-size: 2rem;
+    font-weight: 900;
+    font-style: italic;
+    text-transform: uppercase;
+    margin-bottom: 18px;
+}
+
+.genre-tags {
+    margin-bottom: 25px;
+}
+
+.genre-tags span {
+    display: inline-block;
+    background-color: #ffffff;
+    color: #231f20;
+    border-radius: 30px;
+    padding: 6px 20px;
+    font-size: 1.4rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin: 5px;
+}
+
+.profile-movie-poster {
+    width: 100%;
+    max-width: 140px;
+    height: 210px;
+    object-fit: cover;
+    transition: 0.3s;
+}
+
+.profile-movie-poster:hover {
+    transform: translateY(-5px) scale(1.03);
+}
+
+.profile-stars {
+    color: #ffffff;
+    font-size: 1.4rem;
+    margin-top: 5px;
+}
+
+.profile-buttons {
+    margin-top: 25px;
+}
+
+.profile-btn {
+    display: inline-block;
+    background-color: #fdde00;
+    color: #231f20;
+    border-radius: 30px;
+    padding: 8px 24px;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin: 5px;
+}
+
+.profile-btn:hover {
+    background-color: #ffffff;
+    color: #231f20;
+}
+
+@media (max-width: 768px) {
+    .profile-header {
+        text-align: center;
+    }
+
+    .profile-header h1 {
+        font-size: 2.2rem;
+    }
+
+    .profile-header h2 {
+        font-size: 1.5rem;
+    }
+}
+
+.profile-star-rating {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+
+    margin-top: 8px;
+}
+
+.profile-star-rating input {
+    display: none;
+}
+
+.profile-star-rating label {
+    color: #ffffff;
+
+    font-size: 1.5rem;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.profile-star-rating label:hover,
+.profile-star-rating label:hover ~ label,
+.profile-star-rating input:checked ~ label {
+    color: #fdde00;
 }

@@ -3,14 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Whiplash</title>
-    
+    <title>Find My Movie</title>
+
     <link rel="stylesheet" href="assets/styles/bootstrap.min.css">
     <link rel="stylesheet" href="assets/styles/bootstrapindex.css">
     <link rel="stylesheet" href="assets/styles/indexstyle.css">
 </head>
 <body>
-    
     <!--Navbar-->
     <nav class="navbar navbar-expand-lg archnav">
         <div class="container-fluid px-4">
@@ -35,7 +34,7 @@
                 </form>
                 
                 <ul class="navbar-nav mb-2 mb-lg-0 align-items-lg-center gap-lg-3">
-                    
+
                     <li class="nav-item">
                         <a class="nav-link" href="archive.html">ARCHIVE</a>
                     </li>
@@ -66,71 +65,57 @@
             </div>
         </div>
     </nav>
-    
-    
-    <!-- Movie Detail Page -->
-    <section class="film-detail-section">
-        <div class="container-fluid">
-            <div class="row">
-                <!-- Main Movie Content -->
-                <div class="col-lg-8 film-main-content">
-                    <div class="row align-items-start g-4">
-                        <div class="col-md-4">
-                            <img src="assets/images/whiplash.jpeg" alt="whiplash Poster" class="film-poster">
-                        </div>
-                        
-                        <div class="col-md-8">
-                            <h1 class="film-title">
-                                Whilplash
-                            </h1>
-                            
-                            <p class="film-info">
-                                Drama | 1hr 45mins | 2014
-                            </p>
-                            
-                            <p class="film-description">
-                                Whiplash follows a young and ambitious jazz drummer striving to become
-                                one of the greats while training under a demanding music instructor.
-                                The film explores ambition, discipline, pressure, and the cost of chasing excellence.
-                            </p>
-                        </div>
-                    </div>
-                    <h2 class="trailer-title">Trailer</h2>
 
-                    <div class="trailer-box">
-                        <iframe 
-                            src="https://www.youtube.com/embed/7d_jQycdQGo?si=INWaq92-IrMc2K73" 
-                            title="YouTube video player" 
-                            allowfullscreen>
-                    </iframe>" 
-                    </div>
-                </div>
-                <!--SideBar-->
-                <aside class="col-lg-4 film-sidebar">
-                    <h3>Who is this movie for?</h3>
-
-                    <ul>
-                        <li>oung adults and adults interested in intense dramas.</li>
-                        <li>People passionate about music and performance.</li>
-                        <li>Viewers interested in ambition and perfectionism.</li>
-                        <li>Fans of emotionally intense character-driven stories.</li>
-                    </ul>
-
-                    <h3>If you like this movie you should try...</h3>
-
-                    <div class="recommendation-grid">
-                        <img src="assets/images/La La Land (2016).jpeg" alt="La La Land Poster">
-                        <img src="assets/images/tick tick boom (2021).jpeg" alt="Tick Tick Boom Poster">
-                        <img src="assets/images/deadpoetssociety.jpeg" alt="Dead Poets Society Poster">
-                        <img src="assets/images/beutifulboy.jpeg" alt="Beautiful boy Poster">
-                    </div>
-                </aside>
+    <!-- Find My Movie Hero -->
+        <section class="find-hero">
+            <div class="find-hero-content">
+                <h1>Find My Movie!</h1>
+                <p>Not Sure what to watch?</p>
+                <p>Answer a few quick questions and discover the perfect film.</p>
             </div>
-        </div>
-    </section>
+        </section>
+
+        <!-- Quiz Section -->
+            <section class="quiz-selection">
+                <div class="container">
+                    <div class="quiz-question">
+                        <h2>1. What is your mood?</h2>
+                        <button class="quiz-option" data-question="mood" data-value="happy">Happy</button>
+                        <button class="quiz-option" data-question="mood" data-value="excited">Excited</button>
+                        <button class="quiz-option" data-question="mood" data-value="emotional">Emotional</button>
+                        <button class="quiz-option" data-question="mood" data-value="relaxed">Relaxed</button>
+                    </div>
+
+                    <div class="quiz-question">
+                        <h2>2. What genre do you prefer?</h2>
+                        <button class="quiz-option" data-question="genre" data-value="action">Action</button>
+                        <button class="quiz-option" data-question="genre" data-value="drama">Drama</button>
+                        <button class="quiz-option" data-question="genre" data-value="horror">horror</button>
+                        <button class="quiz-option" data-question="genre" data-value="comedy">Comedy</button>
+                    </div>
+
+                    <div class="quiz-question">
+                        <h2>3. Who are you watching with?</h2>
+                        <button class="quiz-option" data-question="watching" data-value="alone">Alone</button>
+                        <button class="quiz-option" data-question="watching" data-value="friends">Friends</button>
+                        <button class="quiz-option" data-question="watching" data-value="family">Family</button>
+                        <button class="quiz-option" data-question="watching" data-value="date">Date</button>
+                    </div>
+
+                    <div class="quiz-question">
+                        <h2>4. Preferred movie length?</h2>
+                        <button class="quiz-option" data-question="length" data-value="short">Short</button>
+                        <button class="quiz-option" data-question="length" data-value="medium">Medium</button>
+                        <button class="quiz-option" data-question="length" data-value="long">Long</button>
+                    </div>
+
+                    <button id="findMovieBtn" class="find-movie-submit">Find My Movie</button>
+
+                    <div id="movieResult" class="movie-result"></div>
+                </div>
+            </section>
     
-    
-    
+
     <!-- Footer -->
     <footer class="footer-section">
         <div class="container-fluid px-5">
@@ -185,10 +170,65 @@
             </div>
         </div>
     </footer>
-    
-    
-    
-    
+
+
     <script src="assets/scripts/bootstrap.bundle.min.js"></script>
+    <script>
+const answers = {
+    mood: "",
+    genre: "",
+    watching: "",
+    length: ""
+};
+
+const options = document.querySelectorAll(".quiz-option");
+const resultBox = document.getElementById("movieResult");
+const findMovieBtn = document.getElementById("findMovieBtn");
+
+options.forEach(option => {
+    option.addEventListener("click", function () {
+        const question = this.dataset.question;
+        const value = this.dataset.value;
+
+        answers[question] = value;
+
+        document.querySelectorAll(`[data-question="${question}"]`).forEach(button => {
+            button.classList.remove("selected");
+        });
+
+        this.classList.add("selected");
+    });
+});
+
+findMovieBtn.addEventListener("click", function () {
+    if (!answers.mood || !answers.genre || !answers.watching || !answers.length) {
+        resultBox.innerHTML = "<p>Please answer all questions first.</p>";
+        return;
+    }
+
+    let movie = "Good Will Hunting";
+    let link = "goodwillhunting.html";
+
+    if (answers.genre === "thriller") {
+        movie = "Parasite";
+        link = "parasite.html";
+    } else if (answers.genre === "romance") {
+        movie = "The Notebook";
+        link = "thenotebook.html";
+    } else if (answers.genre === "comedy") {
+        movie = "Little Miss Sunshine";
+        link = "littlemisssunshine.html";
+    } else if (answers.genre === "action") {
+        movie = "Spider-Man: Across the Spider-Verse";
+        link = "spiderman.html";
+    }
+
+    resultBox.innerHTML = `
+        <h3>Your movie match is:</h3>
+        <p>${movie}</p>
+        <a href="${link}" class="result-btn">View Movie</a>
+    `;
+});
+</script>
 </body>
 </html>
