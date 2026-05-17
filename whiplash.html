@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ArcHive Homepage</title>
-    
+    <title>Whiplash</title>
     
     <link rel="stylesheet" href="assets/styles/bootstrap.min.css">
     <link rel="stylesheet" href="assets/styles/bootstrapindex.css">
     <link rel="stylesheet" href="assets/styles/indexstyle.css">
 </head>
 <body>
+    
     <!--Navbar-->
     <nav class="navbar navbar-expand-lg archnav">
         <div class="container-fluid px-4">
@@ -35,7 +35,7 @@
                 </form>
                 
                 <ul class="navbar-nav mb-2 mb-lg-0 align-items-lg-center gap-lg-3">
-
+                    
                     <li class="nav-item">
                         <a class="nav-link" href="archive.html">ARCHIVE</a>
                     </li>
@@ -67,63 +67,65 @@
         </div>
     </nav>
     
-    <!-- Hero Section -->
-    <section class="hero-section">
-        <div class="hero-content">
-            <h1>Not sure what to watch?</h1>
-            <p>Answer a few quick questions & discover the perfect movie for you!</p>
-            <a href="find.html" class="btn hero-btn">Find My Movie</a>
-        </div>
-    </section>
     
-    <!-- Featured Movies -->
-    <section class="featured-section">
-        <div class="container-fluid px-5">
-            <h2 class="featured-title">Featured Movies</h2>
-            <div class="row gy-5">
-                
-                <!-- Movie 1 -->
-                <div class="col-lg-6">
-                    <div class="movie-card row align-items-center">
-                        <div class="col-md-5 text-center">
-                            
-                            <img src="assets/images/isle-of-dogs.jpeg" alt="Isle of Dogs Poster" class="movie-poster">
-                            
+    <!-- Movie Detail Page -->
+    <section class="film-detail-section">
+        <div class="container-fluid">
+            <div class="row">
+                <!-- Main Movie Content -->
+                <div class="col-lg-8 film-main-content">
+                    <div class="row align-items-start g-4">
+                        <div class="col-md-4">
+                            <img src="assets/images/whiplash.jpeg" alt="whiplash Poster" class="film-poster">
                         </div>
-                        <div class="col-md-7">
-                            <h3>Isle of Dogs</h3>
+                        
+                        <div class="col-md-8">
+                            <h1 class="film-title">
+                                Whilplash
+                            </h1>
                             
-                            <p>
-                                Isle of Dogs is an animated film set in a futuristic version of Japan,
-                                where all dogs have been exiled to a remote island due to a public health crisis.
+                            <p class="film-info">
+                                Drama | 1hr 45mins | 2014
                             </p>
                             
-                            <a href="whiplash.html" class="btn more-btn">More Info</a>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Movie 2 -->
-                <div class="col-lg-6">
-                    <div class="movie-card row align-items-center">
-                        <div class="col-md-5 text-center">
-                            <img src="assets/images/whiplash.jpeg" alt="Whiplash Poster" class="movie-poster">
-                        </div>
-                        <div class="col-md-7">
-                            <h3>Whiplash</h3>
-                            
-                            <p>
-                                Whiplash follows a young and ambitious jazz drummer striving
-                                to become one of the greats under an intense instructor.
+                            <p class="film-description">
+                                Whiplash follows a young and ambitious jazz drummer striving to become
+                                one of the greats while training under a demanding music instructor.
+                                The film explores ambition, discipline, pressure, and the cost of chasing excellence.
                             </p>
-                            
-                            <a href="#" class="btn more-btn">More Info</a>
                         </div>
                     </div>
+                    <h2 class="trailer-title">Trailer</h2>
+
+                    <div class="trailer-box">
+                        <!--Add Youtube Trailer-->
+                    </div>
                 </div>
+                <!--SideBar-->
+                <aside class="col-lg-4 film-sidebar">
+                    <h3>Who is this movie for?</h3>
+
+                    <ul>
+                        <li>oung adults and adults interested in intense dramas.</li>
+                        <li>People passionate about music and performance.</li>
+                        <li>Viewers interested in ambition and perfectionism.</li>
+                        <li>Fans of emotionally intense character-driven stories.</li>
+                    </ul>
+
+                    <h3>If you like this movie you should try...</h3>
+
+                    <div class="recommendation-grid">
+                        <img src="assets/images/La La Land (2016).jpeg" alt="La La Land Poster">
+                        <img src="assets/images/tick tick boom (2021).jpeg" alt="Tick Tick Boom Poster">
+                        <img src="assets/images/deadpoetssociety.jpeg" alt="Dead Poets Society Poster">
+                        <img src="assets/images/beutifulboy.jpeg" alt="Beautiful boy Poster">
+                    </div>
+                </aside>
             </div>
         </div>
     </section>
+    
+    
     
     <!-- Footer -->
     <footer class="footer-section">
@@ -179,12 +181,6 @@
             </div>
         </div>
     </footer>
-    
-    
-    
-    
-    
-    
     
     
     
