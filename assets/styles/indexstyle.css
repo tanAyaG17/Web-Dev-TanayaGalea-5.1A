@@ -329,3 +329,192 @@ body {
 }
 
 
+/* Archive Page */
+
+.archive-filter-section {
+    background-color: #63c2d0;
+    padding: 25px 0;
+}
+
+.filter-btn {
+    background-color: #fdde00;
+    color: #231f20;
+    border: none;
+    border-radius: 30px;
+    padding: 8px 18px;
+    margin-right: 10px;
+    font-weight: 800;
+    font-style: italic;
+    text-transform: uppercase;
+}
+
+.archive-section {
+    background-color: #fdde00;
+    padding: 45px 0 70px;
+}
+
+.archive-card {
+    text-align: center;
+    transition: 0.3s;
+}
+
+.archive-card:hover {
+    transform: translateY(-5px);
+}
+
+.archive-poster {
+    width: 100%;
+    max-width: 180px;
+    border-radius: 4px;
+    box-shadow: 0 4px 10px rgba(35, 31, 32, 0.3);
+}
+
+.archive-title {
+    color: #231f20;
+    font-size: 1.05rem;
+    font-weight: 800;
+    font-style: italic;
+    text-transform: uppercase;
+    line-height: 1.1;
+    margin-top: 10px;
+    min-height: 45px;
+}
+
+.filter-select {
+    background-color: #fdde00;
+    color: #231f20;
+
+    border: none;
+    border-radius: 30px;
+
+    padding: 10px 18px;
+    padding-right: 55px;
+
+    font-weight: 800;
+    font-style: italic;
+    text-transform: uppercase;
+
+    cursor: pointer;
+
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+    background-image: url(../icons/noun-arrow-down-2424963.png);
+    background-repeat: no-repeat;
+    background-position: right 22px center;
+    background-size: 12px;
+}
+
+/* Film Detail Page */
+
+.film-detail-section {
+    background-color: #fdde00;
+}
+
+.film-main-content {
+    padding: 45px 55px 70px;
+}
+
+.film-sidebar {
+    background-color: #63c2d0;
+    padding: 45px 35px;
+    color: #231f20;
+}
+
+.film-poster {
+    width: 100%;
+    max-width: 290px;
+    box-shadow: 0 4px 12px rgba(35, 31, 32, 0.35);
+}
+
+.film-title {
+    color: #231f20;
+    font-size: 1.2rem;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.film-info {
+    color: #231f20;
+    font-size: 1.2rem;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.film-description {
+    color: #231f20;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.5;
+    max-width: 550px;
+}
+
+.trailer-title {
+    color: #231f20;
+    font-size: 1.8rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-top: 45px;
+}
+
+.trailer-box {
+    width: 100%;
+    max-width: 700px;
+    height: 360px;
+    background-color: #000000;
+    margin-top: 10px;
+}
+
+.film-sidebar h3 {
+    font-size: 1.3rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+
+.film-sidebar li {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+.recommendation-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    margin-top: 25px;
+}
+
+.recommendation-grid img {
+    width: 100%;
+    max-width: 130px;
+    box-shadow: 0 4px 8px rgba(35, 31, 32, 0.25);
+}
+
+@media (max-width: 768px) {
+    .film-main-content {
+        padding: 35px 25px;
+        text-align: center;
+    }
+
+    .film-title {
+        font-size: 2.2rem;
+    }
+
+    .film-description {
+        margin: 0 auto;
+    }
+
+    .trailer-box {
+        height: 230px;
+    }
+
+    .film-sidebar {
+        padding: 35px 25px;
+    }
+
+    .recommendation-grid {
+        justify-items: center;
+    }
+}

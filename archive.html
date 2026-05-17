@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Archive</title>
+    
+    <link rel="stylesheet" href="assets/styles/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/styles/bootstrapindex.css">
+    <link rel="stylesheet" href="assets/styles/indexstyle.css">
+</head>
+<body>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg archnav">
+        <div class="container-fluid px-4">
+            
+            <!--logo-->
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/images/ArcHiveLogo_-01.svg" alt="ArcHive" class="logo">
+            </a>
+            
+            <!--Mobile menu button-->
+            <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <!--Navbar links-->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                
+                <!-- Search Bar -->
+                <form class="d-flex search-form my-3 my-lg-0" role="search">
+                    <input class="form-control search-input" type="search" placeholder="Search" aria-label="Search"/>
+                    <button class="btn search-btn" type="submit">Search</button>
+                </form>
+                
+                <ul class="navbar-nav mb-2 mb-lg-0 align-items-lg-center gap-lg-3">
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="archive.html">ARCHIVE</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="top3.html">TOP 3 MOVIES</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="watched.html">WATCHED</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">CONTACT</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="find.html">FIND MY MOVIE</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a href="profile.html">
+                            <img src="assets/images/profile.jpg" alt="user profile" class="profile-img">
+                        </a>
+                    </li>
+                </ul>
+                
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Archive Filter Bar-->
+    <section class="archive-filter-section">
+        <div class="container-fluid px-5 d-flex gap-3 flex-wrap">
+            <!-- Genre -->
+            <select id="genreFilter" class="filter-select">
+                <option value="all">Genre</option>
+                <option value="Drama">Drama</option>
+                <option value="Comedy">Comedy</option>
+                <option value="Sci-Fi">Sci-Fi</option>
+                <option value="Horror">Horror</option>
+                <option value="Animation">Animation</option>
+            </select>
+            
+            <!-- Year -->
+            <select id="yearFilter" class="filter-select">
+                <option value="all">Year</option>
+                <option value="1980s">1980s</option>
+                <option value="1990s">1990s</option>
+                <option value="2000s">2000s</option>
+                <option value="2010s">2010s</option>
+                <option value="2020s">2020s</option>
+            </select>
+            
+            <!-- Platform -->
+            <select  id="platformFilter" class="filter-select">
+                <option value="all">Platform</option>
+                <option value="Netflix">Netflix</option>
+                <option value="Prime">Prime</option>
+                <option value="Disney">Disney</option>
+                <option value="Paramount">Paramount</option>
+                <option value="Cinema">Cinema</option>
+            </select>
+        </div>
+    </section>
+    
+    <!-- Movie Archive grid -->
+    <section class="archive-section">
+        <div class="container-fluid px-5">
+            <div class="row g-4">
+                
+                <div class="col-4 col-md-4 col-lg-2 movie-item" 
+                data-genre="Drama" 
+                data-year="1990s" 
+                data-platform="Netflix">
+                
+                <div class="archive-card">
+                    <a href="whiplash.html">
+                        <img src="assets/images/good-will-hunting.jpeg" alt="Good Will Hunting Poster" class="archive-poster">
+                    </a>
+                    <h3 class="archive-title">Good Will Hunting</h3>
+                </div>
+            </div>
+            
+            <div class="col-4 col-md-4 col-lg-2 movie-item"
+            data-genre="Drama" 
+            data-year="2010s" 
+            data-platform="Netflix">
+            
+            <div class="archive-card">
+                <a href="#">
+                    <img src="assets/images/whiplash.jpeg" alt="whiplash" class="archive-poster">
+                </a>
+                <h3 class="archive-title">Whiplash</h3>
+            </div>
+        </div>
+        
+        <div class="col-4 col-md-4 col-lg-2 movie-item"
+        data-genre="Drama" 
+        data-year="1990s" 
+        data-platform="Paramount">
+        
+        <div class="archive-card">
+            <a href="#">
+                <img src="assets/images/Forest-Gump.jpeg" alt="Forest Gump Poster" class="archive-poster">
+            </a>
+            <h3 class="archive-title">Forest Gump</h3>
+        </div>
+    </div>
+    
+    <div class="col-4 col-md-4 col-lg-2 movie-item"
+    data-genre="Animation" 
+    data-year="2010s" 
+    data-platform="Disney">
+    <div class="archive-card">
+        <a href="#">
+            <img src="assets/images/isle-of-dogs.jpeg" alt="Isle of Dogs Poster" class="archive-poster">
+        </a>
+        <h3 class="archive-title">Isle of Dogs</h3>
+    </div>
+</div>
+
+<div class="col-4 col-md-4 col-lg-2 movie-item"
+data-genre="Drama" 
+data-year="2020s" 
+data-platform="Hulu">
+<div class="archive-card">
+    <a href="#">
+        <img src="assets/images/normalpeople.jpeg" alt="Normal People Poster" class="archive-poster">
+    </a>
+    <h3 class="archive-title">Normal People</h3>
+</div>
+</div>
+
+<div class="col-6 col-md-4 col-lg-2 movie-item"
+data-genre="Drama" 
+data-year="1990s" 
+data-platform="Paramount">
+<div class="archive-card">
+    <a href="#">
+        <img src="assets/images/trumanshow.jpeg" alt="The Truman Show Poster" class="archive-poster">
+    </a>
+    <h3 class="archive-title">The Truman Show</h3>
+</div>
+</div>
+
+<div class="col-6 col-md-4 col-lg-2 movie-item"
+data-genre="Drama" 
+data-year="2010s" 
+data-platform="Prime">
+<div class="archive-card">
+    <a href="#">
+        <img src="assets/images/beutifulboy.jpeg" alt="Beautiful Boy Poster" class="archive-poster">
+    </a>
+    <h3 class="archive-title">Beautiful Boy</h3>
+</div>
+</div>
+
+<div class="col-6 col-md-4 col-lg-2 movie-item"
+data-genre="Sci-Fi" 
+data-year="2020s" 
+data-platform="Disney">
+<div class="archive-card">
+    <a href="#">
+        <img src="assets/images/poorthings.jpeg" alt="Poor Things Poster" class="archive-poster">
+    </a>
+    <h3 class="archive-title">Poor Things</h3>
+</div>
+</div>
+
+<div class="col-6 col-md-4 col-lg-2 movie-item"
+data-genre="Sci-Fi" 
+data-year="2000s" 
+data-platform="Netflix">
+<div class="archive-card">
+    <a href="#">
+        <img src="assets/images/eternalSunshine.Jpeg" alt="Eternal Sunshine" class="archive-poster">
+    </a>
+    <h3 class="archive-title">Eternal Sunshine</h3>
+</div>
+</div>
+
+<div class="col-6 col-md-4 col-lg-2 movie-item"
+data-genre="Drama" 
+data-year="2000s" 
+data-platform="Netflix">
+<div class="archive-card">
+    <a href="#">
+        <img src="assets/images/pride&prejudice.jpeg" alt="Pride & Prejudice Poster" class="archive-poster">
+    </a>
+    <h3 class="archive-title">Pride & Prejudice</h3>
+</div>
+</div>
+
+<div class="col-6 col-md-4 col-lg-2 movie-item"
+data-genre="Drama" 
+data-year="1980s" 
+data-platform="Disney">
+<div class="archive-card">
+    <a href="#">
+        <img src="assets/images/deadpoetssociety.jpeg" alt="Dead Poets Society Poster" class="archive-poster">
+    </a>
+    <h3 class="archive-title">Dead Poets Society</h3>
+</div>
+</div>
+
+<div class="col-6 col-md-4 col-lg-2 movie-item"
+data-genre="Sci-Fi" 
+data-year="2010s" 
+data-platform="prime">
+<div class="archive-card">
+    <a href="#">
+        <img src="assets/images/_Interstellar_.jpeg" alt="Interstellar Poster" class="archive-poster">
+    </a>
+    <h3 class="archive-title">Interstellar</h3>
+</div>
+</div>
+
+<div class="col-6 col-md-4 col-lg-2 movie-item"
+data-genre="Horror" 
+data-year="1990s" 
+data-platform="Netflix">
+<div class="archive-card">
+    <a href="#">
+        <img src="assets/images/us.jpeg" alt="Us Poster" class="archive-poster">
+    </a>
+    <h3 class="archive-title">Us</h3>
+</div>
+</div>
+
+<div class="col-6 col-md-4 col-lg-2 movie-item"
+data-genre="Drama" 
+data-year="2000s" 
+data-platform="Netflix">
+<div class="archive-card">
+    <a href="#">
+        <img src="assets/images/Catch Me If You Can.jpeg" alt="Catch me if you Can Poster" class="archive-poster">
+    </a>
+    <h3 class="archive-title">Catch me if you Can</h3>
+</div>
+</div>
+
+<div class="col-6 col-md-4 col-lg-2 movie-item"
+data-genre="Animation" 
+data-year="2000s" 
+data-platform="Disey">
+<div class="archive-card">
+    <a href="#">
+        <img src="assets/images/Fantastic Mr_ Fox (2009) [842 x 1191].jpeg" alt="Fantastic Mr.Fox Poster" class="archive-poster">
+    </a>
+    <h3 class="archive-title">Fantastic Mr.Fox</h3>
+</div>
+</div>
+
+<div class="col-6 col-md-4 col-lg-2 movie-item"
+data-genre="Drama" 
+data-year="2010s" 
+data-platform="Netflix">
+<div class="archive-card">
+    <a href="#">
+        <img src="assets/images/perks of a wallflower.jpeg" alt="The Perks of Being a Wallflower" class="archive-poster">
+    </a>
+    <h3 class="archive-title">The Perks of Being a Wallflower</h3>
+</div>
+</div>
+
+<div class="col-6 col-md-4 col-lg-2 movie-item"
+data-genre="Comedy" 
+data-year="2010s" 
+data-platform="Disney">
+<div class="archive-card">
+    <a href="#">
+        <img src="assets/images/Jojo Rabbit.jpeg" alt="JoJo Rabbit Poster" class="archive-poster">
+    </a>
+    <h3 class="archive-title">JoJo Rabbit</h3>
+</div>
+</div>
+
+<div class="col-6 col-md-4 col-lg-2 movie-item"
+data-genre="Drama" 
+data-year="2010s" 
+data-platform="Prime">
+<div class="archive-card">
+    <a href="#">
+        <img src="assets/images/La La Land (2016).jpeg" alt="La La Land Poster" class="archive-poster">
+    </a>
+    <h3 class="archive-title">La La Land</h3>
+</div>
+</div>
+
+<div class="col-6 col-md-4 col-lg-2 movie-item"
+data-genre="Drama" 
+data-year="2010s" 
+data-platform="Netflix">
+<div class="archive-card">
+    <a href="#">
+        <img src="assets/images/Little Women.jpeg" alt="Little Women Poster" class="archive-poster">
+    </a>
+    <h3 class="archive-title">Little Women</h3>
+</div>
+</div>
+
+<div class="col-6 col-md-4 col-lg-2 movie-item"
+data-genre="Drama" 
+data-year="2020s" 
+data-platform="Cinema">
+<div class="archive-card">
+    <a href="#">
+        <img src="assets/images/marty supreme.jpeg" alt="Marty Supreme Poster" class="archive-poster">
+    </a>
+    <h3 class="archive-title">Marty Supreme</h3>
+</div>
+</div>
+
+<div class="col-6 col-md-4 col-lg-2 movie-item"
+data-genre="Horror" 
+data-year="2010s" 
+data-platform="Prime">
+<div class="archive-card">
+    <a href="#">
+        <img src="assets/images/Midsommar (2019).jpeg" alt="Midsommar Poster" class="archive-poster">
+    </a>
+    <h3 class="archive-title">Midsommar</h3>
+</div>
+</div>
+
+<div class="col-6 col-md-4 col-lg-2 movie-item"
+data-genre="Drama" 
+data-year="2010s" 
+data-platform="Netflix">
+<div class="archive-card">
+    <a href="#">
+        <img src="assets/images/parasite.jpeg" alt="Parasite Poster" class="archive-poster">
+    </a>
+    <h3 class="archive-title">Parasite</h3>
+</div>
+</div>
+
+<div class="col-6 col-md-4 col-lg-2 movie-item"
+data-genre="Drama" 
+data-year="2020s" 
+data-platform="Cinema">
+<div class="archive-card">
+    <a href="#">
+        <img src="assets/images/weliveintime.jpeg" alt="We Live In Time Poster" class="archive-poster">
+    </a>
+    <h3 class="archive-title">We Live In Time</h3>
+</div>
+</div>
+
+<div class="col-6 col-md-4 col-lg-2 movie-item"
+data-genre="Comedy" 
+data-year="2020s" 
+data-platform="Cinema">
+<div class="archive-card">
+    <a href="#">
+        <img src="assets/images/thedrama.jpeg" alt="The Drama Poster" class="archive-poster">
+    </a>
+    <h3 class="archive-title">The Drama</h3>
+</div>
+</div>
+
+<div class="col-6 col-md-4 col-lg-2 movie-item"
+data-genre="Drama" 
+data-year="2010s" 
+data-platform="Disney">
+<div class="archive-card">
+    <a href="#">
+        <img src="assets/images/thegreatestshowman.jpeg" alt="The Greatest Showman Poster" class="archive-poster">
+    </a>
+    <h3 class="archive-title">The Greatest Showman</h3>
+</div>
+</div>
+
+<div class="col-6 col-md-4 col-lg-2 movie-item"
+data-genre="Comedy" 
+data-year="1990s" 
+data-platform="Netflix">
+<div class="archive-card">
+    <a href="#">
+        <img src="assets/images/themask.jpeg" alt="The Mask Poster" class="archive-poster">
+    </a>
+    <h3 class="archive-title">The Mask</h3>
+</div>
+</div>
+
+<div class="col-6 col-md-4 col-lg-2 movie-item"
+data-genre="Drama" 
+data-year="2020s" 
+data-platform="Netflix">
+<div class="archive-card">
+    <a href="#">
+        <img src="assets/images/tick tick boom (2021).jpeg" alt="Tick Tick Boom Poster" class="archive-poster">
+    </a>
+    <h3 class="archive-title">Tick. Tick. Boom!</h3>
+</div>
+</div>
+
+<div class="col-6 col-md-4 col-lg-2 movie-item"
+data-genre="Drama" 
+data-year="2000s" 
+data-platform="Netflix">
+<div class="archive-card">
+    <a href="#">
+        <img src="assets/images/notebook.jpeg" alt="The Notebook Poster" class="archive-poster">
+    </a>
+    <h3 class="archive-title">The Notebook</h3>
+</div>
+</div>
+
+<div class="col-6 col-md-4 col-lg-2 movie-item"
+data-genre="Animation" 
+data-year="2020s" 
+data-platform="Netflix">
+<div class="archive-card">
+    <a href="#">
+        <img src="assets/images/spiderman.jpeg" alt="Spider-man Across the Spider Verse" class="archive-poster">
+    </a>
+    <h3 class="archive-title">Spider-man Across the Spider Verse</h3>
+</div>
+</div>
+
+<div class="col-6 col-md-4 col-lg-2 movie-item"
+data-genre="Comedy" 
+data-year="2000s" 
+data-platform="Disney">
+<div class="archive-card">
+    <a href="#">
+        <img src="assets/images/littleMissSunshine.jpeg" alt="Little Miss Sunshine" class="archive-poster">
+    </a>
+    <h3 class="archive-title">Little Miss Sunshine</h3>
+</div>
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- Footer -->
+<footer class="footer-section">
+    <div class="container-fluid px-5">
+        <div class="row gy-4 align-items-end">
+            
+            <!--Left Side-->
+            <div class="col-lg-8">
+                <h3 class="footer-logo">ArcHive</h3>
+                
+                <p class="footer-tagline">
+                    Discover, Track & Explore films.
+                </p>
+                
+                <h5 class="footer-heading">Quick Links</h5>
+                
+                <div class="footer-links">
+                    <a href="index.html">Home</a>
+                    <a href="top3.html">Top 3</a>
+                    <a href="watched.html">Watched</a>
+                    <a href="contact.html">Contact</a>
+                    <a href="find.html">Find My Movie</a>
+                    <a href="profile.html">Profile</a>
+                </div>
+                
+                <p class="footer-email">
+                    info@archive.com
+                </p>
+            </div>
+            
+            <!--Right Side-->
+            <div class="col-lg-4 text-lg-end footer-right">
+                <div class="social-icons">
+                    <a href="#">
+                        <img src="assets/icons/instagram.png" alt="Instagram">
+                    </a>
+                    <a href="#">
+                        <img src="assets/icons/twittericon.png" alt="Twitter">
+                    </a>
+                    <a href="#">
+                        <img src="assets/icons/tiktokicon.png" alt="TikTok">
+                    </a>
+                    <a href="#">
+                        <img src="assets/icons/facebookicon.png" alt="Facebook">
+                    </a>
+                </div>
+                
+                <p class="copyright">
+                    © 2026 ArcHive. All rights reserved.
+                </p>
+                
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="assets/scripts/bootstrap.bundle.min.js"></script>
+<script>
+    const genreFilter = document.getElementById("genreFilter");
+    const yearFilter = document.getElementById("yearFilter");
+    const platformFilter = document.getElementById("platformFilter");
+    
+    const movies = document.querySelectorAll(".movie-item");
+    
+    function filterMovies() {
+        
+        const genreValue = genreFilter.value;
+        const yearValue = yearFilter.value;
+        const platformValue = platformFilter.value;
+        
+        movies.forEach(movie => {
+            
+            const genre = movie.dataset.genre;
+            const year = movie.dataset.year;
+            const platform = movie.dataset.platform;
+            
+            const genreMatch =
+            genreValue === "all" || genre === genreValue;
+            
+            const yearMatch = 
+            yearValue === "all" || year === yearValue;
+            
+            const platformMatch =
+            platformValue === "all" || platform === platformValue;
+            
+            if (genreMatch && yearMatch && platformMatch) {
+                movie.style.display = "block";
+            } else {
+                movie.style.display = "none";
+            }
+            
+        });
+    }
+    
+    genreFilter.addEventListener("change", filterMovies);
+    yearFilter.addEventListener("change", filterMovies);
+    platformFilter.addEventListener("change", filterMovies);
+</script>
+</body>
+</html>
